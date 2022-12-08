@@ -7,14 +7,61 @@
     <title>Guns n Roses - Mini Bio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font/gnrfont.TTF">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
 </head>
 <body>
-    <h1 class="titulos"> Guns N Roses</h1>
-    <img id="imgBanda" src="https://imagenes.elpais.com/resizer/XNEAInQNLwuFyWJ7VmFbE9kdI-c=/1960x1103/ep01.epimg.net/cultura/imagenes/2016/01/05/actualidad/1451996412_919425_1452000859_noticia_fotograma.jpg" alt="Formacion original GNR">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>  
+  
+  <nav class="navbar navbar-expand-lg bg-black bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Explorador de pagina</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio">Volver arriba</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formacion">Formacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#discos">Discos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1 class="titulos" id="inicio"> Guns N Roses</h1>    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://imagenes.elpais.com/resizer/XNEAInQNLwuFyWJ7VmFbE9kdI-c=/1960x1103/ep01.epimg.net/cultura/imagenes/2016/01/05/actualidad/1451996412_919425_1452000859_noticia_fotograma.jpg" class="d-block w-50" alt="Formacion original GNR" style="margin:auto;">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.elculto.com.ar/wp-content/uploads/2022/09/Guns-N-Roses-1991-banda.jpg" class="d-block w-50" alt="segunda formacion" style="margin:auto;">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rockfm-cdnmed.agilecontent.com/resources/jpg/5/1/1576837104015.jpg" class="d-block w-50" alt="3ra formacion" style="margin:auto;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    
     <div>
         <h2 class="titulos">Biografia corta</h2>
            <p> La Banda se formo en los años 80 con una formacion original de:</p>
-            <div class="listaBanda">
+            <div class="listaBanda" id="formacion">
                 <ul>
                     <li> Axl Rose como cantante, </li>
                     <li> Slash como guitarra lider, </li>
@@ -32,9 +79,8 @@
             Formo otra banda junto con otros grandes musicos y saco Chinese democracy con una produccion de mas de 10 años. Actualmente resolvieron las diferencias entre Duff, Slash y Axl Rose, se encuentran en una gira mundial que comenzo en 2018 con una primera parte como "Not in this Life time" y ahora solo con el marco "Guns N Roses"
         </p>
     </div>
-
     <h2 class="titulos">CDs</h2>
-    <div class="cds">
+    <div class="cds" id="discos">
         <div>
             <ol>
                 <li><a href="https://open.spotify.com/album/28yHV3Gdg30AiB8h8em1eW"> Apettite for Destruction</a></li>
